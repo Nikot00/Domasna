@@ -1,1 +1,41 @@
+form label {
+    display: inline-block;
+    width: 200px;
+    margin-top: 5px;
+}
 
+table label {
+    display: inline-block;
+    width: 200px;
+}
+
+#edb {
+   width: 40px;
+   background-color: gray;
+}
+
+#embg {
+    width: 40px;
+    background-color: gray;
+}
+
+
+
+#datumBroj {
+    height: 100px;
+    background-color: #c996c3;
+    padding: 10px 10px 10px 60px ;
+    
+}
+
+#datumBroj input {
+    width: 250px;
+    height: 100px;
+}
+
+#formular {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
