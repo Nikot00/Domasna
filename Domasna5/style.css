@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 0px;
+}
+
+.strait-regular {
+  font-family: "Strait", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.card {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    border: 1px solid black;
+    margin: 50px;
+    color: white;
+    font-family: "Strait";
+}
+
+.card-img {
+    width: 1200px;
+    height: 700px;
+}
+
+.weather-img  img{
+    position: absolute;
+    width: 800px;
+    bottom: 40px;
+    left: 80px;
+    box-shadow: 5px 0px 5px 0px rgb(197, 197, 197);
+}
+
+.cloud img{
+    width: 400px;
+    height: 350px;
+    position: absolute;
+    top: 30px;
+    left: 530px;
+    filter: brightness(0.78);
+}
+
+.city {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    font-size: xx-large;
+}
+
+.weather-img #today {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.weather-img #time {
+    position: absolute;
+    left: 100px;
+    top: 250px;
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+
+.weather-info {
+    position: absolute;
+    top: 380px;
+    left: 100px;
+}
+
+.weather-info span {
+    margin-right: 15px;
+}
+
+.current-day {
+    position: absolute;
+    top: 370px;
+    right: 400px;
+    width: fit-content;
+}
+
+.current-day span {
+    font-size: 40;
+    font-weight: bold;
+}
+
+.hr {
+    box-shadow: 0 0 10px 3px rgba(197, 197, 197, 0.5);
+    position: absolute;
+    top: 460px;
+    width: 800px;
+    left: 80px;
+}
+
+.this-week {
+    position: absolute;
+    display: flex;
+    gap: 40px;
+    bottom: 50px;
+    margin-left: 110px;
+    margin-right: 100px;
+}
+
+
+.this-week p {
+    margin-left: 30%;
+}
+
+
+.this-week img {
+    bottom: 200px;
+    width: 120px;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 80px;
+    top: 170px;
+    font-size: 30px;
+    gap: 10px;
+}
+
+.icons i {
+    font-size: 60px;
+}
+
