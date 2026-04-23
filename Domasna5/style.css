@@ -95,7 +95,7 @@ p {
     left: 80px;
     border: none;                
     height: 2px;                
-    background-image: linear-gradient(to right, transparent, #a7a2a2, transparent); /* Fade the ends */
+    background-image: linear-gradient(to right, transparent, #a7a2a2, transparent);
     margin: 20px 0;             
   
 }
