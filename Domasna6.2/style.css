@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: "Strait";
+    background: #000;
+}
+
+/* ===== CARD ===== */
+.card {
+    width: 1200px;
+    height: 700px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    overflow: hidden;
+
+    color: white;
+    background: url("/Domasna6/pozadina.png") center/cover no-repeat;
+}
+
+/* dark overlay for readability */
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+}
+
+/* CONTENT WRAPPER */
+.weather-img {
+    position: relative;
+    z-index: 1;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    padding: 30px 60px;
+    box-sizing: border-box;
+}
+
+/* ===== TOP ===== */
+.top {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.city {
+    font-size: 32px;
+}
+
+#today {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+#time {
+    font-size: 52px;
+    font-weight: bold;
+}
+
+/* ===== MIDDLE (MAIN WEATHER BLOCK) ===== */
+.middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* left image */
+.middle img {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* temperature + text */
+.current-day {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.current-day span {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.current-day p {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* weather info */
+.weather-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== DIVIDER ===== */
+.hr {
+    height: 1px;
+    background: rgba(255,255,255,0.4);
+    margin: 15px 0;
+}
+
+/* ===== WEEK FORECAST ===== */
+.this-week {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.this-week div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.this-week img {
+    width: 60px;
+    height: 60px;
+}
+
+/* ===== CLOUD FIX (optional center floating) ===== */
+.cloud {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+.cloud img {
+    width: 280px;
+    opacity: 0.8;
+}
+
+/* ===== ICON COLUMN (RIGHT SIDE) ===== */
+.icons {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 30px;
+}
+
+.icons i {
+    font-size: 36px;
+}
